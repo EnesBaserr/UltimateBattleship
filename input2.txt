@@ -1,0 +1,218 @@
+carrier 1 1 v
+destroyer 10 10 h
+destroyer 9 9 h
+battleship 9 6 v
+battleship 8 4 v
+cruiser 4 100 h
+cruiser 4 10 h
+subaru 7 2 h
+submarine 7 2 h
+n
+carrier 1 5 h
+battleship 7 5 h
+submarine 2 7 v
+cruiser 5 1 v
+destroyer 8 9 h
+y
+battleship 1 1 h
+cruiser 9 3 v
+carrier 4 3 v
+destroyer 1 5 v
+cruiser 9 6 h
+submarine 9 6 h
+submarine 6 9 h
+y
+10 10
+done
+10 10
+done
+1 10
+done
+9 9
+9 10
+done
+1 1
+2 1
+3 1
+4 1
+5 1
+done
+10 9
+done
+10 1
+done
+8 9
+7 9
+done
+5 5
+done
+8 8
+done
+6 6
+done
+9 8
+9 8
+done
+4 7
+4 8
+done
+8 10
+done
+3 7
+done
+7 7
+done
+5 7
+done
+1 1
+done
+4 6
+4 5
+4 4
+4 3
+4 2
+done
+1 2
+done
+5 5
+5 6
+done
+9 2
+done
+8 1
+done
+6 6
+done
+6 3
+done
+5 5
+5 6
+done
+5 3
+done
+4 5
+3 5
+2 5
+1 5
+6 5
+done
+2 2
+done
+3 3
+done
+7 2
+done
+2 9
+2 10
+done
+9 2
+.
+done
+3 9
+done
+1 3
+done
+2 8
+2 7
+2 6
+done
+3 3
+done
+1 8
+done
+2 4
+done
+6 8
+done
+1 5
+1 6
+1 7
+done
+5 9
+done
+1 4
+done
+4 8
+done
+3 5
+done
+3 4
+done
+2 6
+done
+5 10
+done
+8 3
+done
+3 7
+done
+2 8
+done
+5 7
+done
+3 9
+done
+10 6
+done
+4 10
+done
+9 7
+done
+5 9
+done
+5 4
+done
+7 10
+done
+1 6
+done
+6 8
+done
+4 6
+done
+8 9
+8 10
+done
+2 2
+done
+7 9
+6 9
+9 9
+done
+8 6
+done
+7 4
+done
+9 5
+8 5
+7 5
+10 5
+10 4
+done
+7 7
+done
+7 4
+done
+9 8
+done
+10 1
+done
+10 7
+done
+4 1
+done
+8 6
+done
+8 3
+done
+8 5
+done
+8 1
+done
+10 4
+done
+4 2
+done
+9 5
+9 4
+9 3

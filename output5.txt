@@ -1,0 +1,2091 @@
+Welcome to Ultimate Battleships
+This is a game for 2 people, to be played on two 10x10 boards.
+There are 5 ships in the game:  Carrier (occupies 5 spaces), Battleship (4), Cruiser (3), Submarine (3), and Destroyer (2).
+First, the ships are placed. Ships can be placed on any unoccupied space on the board. The entire ship must be on board.
+Write the ship's name, followed by an x y coordinate, and the orientation (v for vertical or h for horizontal) to place the ship.
+If a player is placing a ship with horizontal orientation, they need to give the leftmost coordinate.
+If a player is placing a ship with vertical orientation, they need to give the uppermost coordinate.
+Player 1 places first, then Player 2 places. Afterwards, players take turns (starting from Player 1) to strike and sink enemy ships by guessing their location on the board.
+Guesses are again x y coordinates. Do not look at the board when it is the other player's turn.
+The last player to have an unsunk ship wins.
+Have fun!
+
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - - - - - - - - - - 
+3  - - - - - - - - - - 			3  - - - - - - - - - - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - - - - - - - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Carrier Battleship Cruiser Submarine Destroyer 
+It is Player 1's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - - - - - - - - - - 
+3  - - - - - - - - - - 			3  - - - - - - - - - - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Battleship Cruiser Submarine Destroyer 
+It is Player 1's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - # - - - - - - - - 			2  - - - - - - - - - - 
+3  - # - - - - - - - - 			3  - - - - - - - - - - 
+4  - # - - - - - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Cruiser Submarine Destroyer 
+It is Player 1's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - # # 			1  - - - - - - - - - - 
+2  - # - - - - - - - - 			2  - - - - - - - - - - 
+3  - # - - - - - - - - 			3  - - - - - - - - - - 
+4  - # - - - - - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Cruiser Submarine 
+It is Player 1's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - # # 			1  - - - - - - - - - - 
+2  - # - - - # - - - - 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Submarine 
+It is Player 1's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - # # 			1  - - - - - - - - - - 
+2  - # - - - # - - - - 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - # # # - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Confirm placement Y/N : 
+Confirm placement Y/N : 
+Confirm placement Y/N : 
+Confirm placement Y/N : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - - - - - - - - - - 
+3  - - - - - - - - - - 			3  - - - - - - - - - - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - - - - - - - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Carrier Battleship Cruiser Submarine Destroyer 
+It is Player 2's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - - - - - - - - - - 
+3  - - - - - - - - - - 			3  - - - - - - - - - - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - # 
+7  - - - - - - - - - - 			7  - - - - - - - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 - - - - - - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Battleship Cruiser Submarine Destroyer 
+It is Player 2's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+Carrier is already placed, please try again.
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - - - - - - - - - - 
+3  - - - - - - - - - - 			3  - - - - - - - - - - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - # 
+7  - - - - - - - - - - 			7  - - - - - - - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 - - - - - - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Battleship Cruiser Submarine Destroyer 
+It is Player 2's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - - - - - - - - - - 
+3  - - - - - - - - - - 			3  - - - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - # 
+7  - - - - - - - - - - 			7  - - - - - - - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 - - - - - - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Cruiser Submarine Destroyer 
+It is Player 2's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - - - - - - - - - - 
+3  - - - - - - - - - - 			3  - - - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - # 
+7  - - - - - - - - - - 			7  - - - - - - - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 - - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Submarine Destroyer 
+It is Player 2's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - # 
+7  - - - - - - - - - - 			7  - - - - - - - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 - - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Submarine 
+It is Player 2's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+Input is in incorrect format, please try again.
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - - - - - - - 			6  - - - - - - - - - # 
+7  - - - - - - - - - - 			7  - - - - - - - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 - - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Ships to be placed: Submarine 
+It is Player 2's turn to place their ships.
+Enter a name, coordinates and orientation to place a ship (Example: Carrier 1 5 h) : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - - # - - - # 
+7  - - - - - - - - - - 			7  - - - - - # - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 - - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Confirm placement Y/N : 
+1  - - - - - - - - # # 			1  - - - - - - - - - - 
+2  - # - - - # - - - - 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - # # # - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 - - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - - - - 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - - # - - - # 
+7  - - - - - - - - - - 			7  - - - - - # - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - - - ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - - 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - - # - - - # 
+7  - - - - - - - - - - 			7  - - - - - # - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - - - - - - - - - # 
+10 - - - - - - - - - - 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - - # ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - # # # - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - - - - - - - - - - 
+10 - - - - - - - - - - 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - - - ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - - # - - - # 
+7  - - - - - - - - - - 			7  - - - - - # - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - O - - - - - - - # 
+10 - - - - - - - - - - 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - - ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - - # - - - # 
+7  - - - - - - - - - - 			7  - - - - - # - - - # 
+8  - - - - - - - - - - 			8  - - - - - - - - - # 
+9  - - - - - - - - - - 			9  - O - - - - - - - # 
+10 - - - - - - - - - - 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - # # # - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - - - - - - - - - 
+9  - - - - - - - - - - 			9  - O - - - - - - - - 
+10 - - - - - - - - - - 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - - # - - - # 
+7  - - - - - - - - - - 			7  - - - - - # - - - # 
+8  - - - - - - - - - - 			8  - - O - - - - - - # 
+9  - - - - - - - - - - 			9  - O - - - - - - - # 
+10 - - - - - - - - - - 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - # # # - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - - - - - - - - 
+8  - - - - # # # # # - 			8  - - O - - - - - - - 
+9  - - - - - - - - - - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - - # - - - # 
+7  - - - - - - - - - - 			7  - - - O - # - - - # 
+8  - - - - - - - - - - 			8  - - O - - - - - - # 
+9  - - - - - - - - - - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - # # # - - - 			6  - - - - - - - - - - 
+7  - - - - - - - - - - 			7  - - - O - - - - - - 
+8  - - - - # # # # # - 			8  - - O - - - - - - - 
+9  - - - - - - - - O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - O # - - - # 
+7  - - - - - - - - - - 			7  - - - O - # - - - # 
+8  - - - - - - - - - - 			8  - - O - - - - - - # 
+9  - - - - - - - - O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - # - - - - 
+6  - - - - - - - - - - 			6  - - - - O # - - - # 
+7  - - - - - - - - - - 			7  - - - O - # - - - # 
+8  - - - - - - - ! - - 			8  - - O - - - - - - # 
+9  - - - - - - - - O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - - - - - - 
+6  - - - - # # # - - - 			6  - - - - O - - - - - 
+7  - - - - - - - - - - 			7  - - - O - - - - - - 
+8  - - - - # # # ! # - 			8  - - O - - - - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - ! - - - - 
+6  - - - - # # # - - - 			6  - - - - O - - - - - 
+7  - - - - - - - - - - 			7  - - - O - - - - - - 
+8  - - - - # # # ! # - 			8  - - O - - - - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O # - - - # 
+7  - - - - - - - - - - 			7  - - - O - # - - - # 
+8  - - - - - - - ! - - 			8  - - O - - - - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O # - - - # 
+7  - - - - - - - - - - 			7  - - - O - # - - - # 
+8  - - - - - - - ! ! - 			8  - - O - - - - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - # # # - - - 			6  - - - - O - - - - - 
+7  - - - - - - - - - - 			7  - - - O - - - - - - 
+8  - - - - # # # ! ! O 			8  - - O - - - - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - # # # - - - 			6  - - - - O ! - - - - 
+7  - - - - - - - - - - 			7  - - - O - - - - - - 
+8  - - - - # # # ! ! O 			8  - - O - - - - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - # # # - - - 			6  - - - - O ! - - - - 
+7  - - - - - - - - - - 			7  - - - O - ! - - - - 
+8  - - - - # # # ! ! O 			8  - - O - - - - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O ! - - - # 
+7  - - - - - - - - - - 			7  - - - O - ! - - - # 
+8  - - - - - - - ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O ! - - - # 
+7  - - - - - - - - - - 			7  - - - O - ! - - - # 
+8  - - - - - - ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O ! - - - # 
+7  - - - - - - - - - - 			7  - - - O - ! - - - # 
+8  - - - - - ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - - - - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O ! - - - # 
+7  - - - - - - - - - - 			7  - - - O - ! - - - # 
+8  - - - - ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - - - - - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - # # # - - - 			6  - - - - O ! - - - - 
+7  - - - - - - - - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - O - - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O ! - - - # 
+7  - - - - - - - - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - O - - - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - # # # - - - 			6  - - - - O ! - - - - 
+7  - - - - - - O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - O O - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - - - - - - 			6  - - - - O ! - - - # 
+7  - - - - - - O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # # # - 
+4  - - - - - - - - - - 			4  - - - - - O O - - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - ! - - - - 			6  - - - - O ! - - - # 
+7  - - - - - - O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - - - - 
+4  - # - - - # - - - - 			4  - - - - - O O - - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - # ! # - - - 			6  - - - - O ! - - - - 
+7  - - - - - O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - ! - - 
+4  - # - - - # - - - - 			4  - - - - - O O - - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - # ! # - - - 			6  - - - - O ! - - - - 
+7  - - - - - O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # ! # - 
+4  - - - - - - - - - - 			4  - - - - - O O O - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - - ! - - - - 			6  - - - - O ! - - - # 
+7  - - - - - O O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # ! # - 
+4  - - - - - - - - - - 			4  - - - - - O O O - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - ! ! - - - - 			6  - - - - O ! - - - # 
+7  - - - - - O O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # ! # - 
+4  - - - - - - - - - - 			4  - - - - - O O O - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - - ! ! ! - - - 			6  - - - - O ! - - - # 
+7  - - - - - O O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - ! - - 
+4  - # - - - # - - - - 			4  - - - - - O O O - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! - - - 			6  - - - - O ! - - - - 
+7  - - - - - O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - ! ! - 
+4  - # - - - # - - - - 			4  - - - - - O O O - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! - - - 			6  - - - - O ! - - - - 
+7  - - - - - O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - - # # ! ! O 
+4  - - - - - - - - - - 			4  - - - - - O O O - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! - - - 			6  - - - - O ! - - - # 
+7  - - - - - O O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - - ! ! O 
+4  - # - - - # - - - - 			4  - - - - - O O O - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! - - - 			6  - - - - O ! - - - - 
+7  - - - - O O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - - ! ! ! O 
+4  - # - - - # - - - - 			4  - - - - - O O O - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! - - - 			6  - - - - O ! - - - - 
+7  - - - - O O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - - ! ! ! ! O 
+4  - # - - - # - - - - 			4  - - - - - O O O - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! - - - 			6  - - - - O ! - - - - 
+7  - - - - O O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - - - - - - - - - - 			4  - - - - - O O O - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! - - - 			6  - - - - O ! - - - # 
+7  - - - - O O O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - # - - - # - - - - 			4  - - - - - O O O - - 
+5  - # - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! - - - - 
+7  - - - - O O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - - - - - - - - - - 			4  - - - - - O O O - - 
+5  - - - - - - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! - - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - # - - - # - - - - 			4  - - - - - O O O - - 
+5  - # - - O - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! - - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - - - - - - - - - - 			4  - - - - - O O O - - 
+5  - - - - O - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - # - O - # - - - - 			4  - - - - - O O O - - 
+5  - # - - O - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Input is in incorrect format, please try again.
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # - - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - # - O - # - - - - 			4  - - - - - O O O - - 
+5  - # - - O - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - - O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - - - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - - - O - - - - - - 			4  - - - - - O O O - - 
+5  - - - - O - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - # - - - # - - - O 			2  - - - - - - - - - - 
+3  - # O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - # - O - # - - - - 			4  - - - - - O O O - - 
+5  - # - - O - - - - - 			5  - - - - - ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - - - - - - - - - O 			2  - # - - - - - - - - 
+3  - - O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - - - O - - - - - - 			4  - - - - - O O O - - 
+5  - - - - O - - - - - 			5  - - - - O ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - ! - - - - - - - O 			2  - # - - - - - - - - 
+3  - - O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - - - O - - - - - - 			4  - - - - - O O O - - 
+5  - - - - O - - - - - 			5  - - - - O ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - ! - - - - - - - O 			2  - # - - - - - - - - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - - - O - - - - - - 			4  - - - - - O O O - - 
+5  - - - - O - - - - - 			5  - - - - O ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - ! - - - - - - - O 			2  - # - - - - - - - - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - - - - O - - - - - 			5  - - - - O ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - ! - - - - - - - O 			2  - # - - - - - - - - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! - - O - - - - - 			5  - - - - O ! O - - - 
+6  - - - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - ! - - - # - - - O 			2  - - - - - - - - - - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! - - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - - - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - ! - - - - - - - O 			2  - # - - - - - - O - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! - - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - O - - - - - O ! ! 			1  - - - - - - - - - - 
+2  - ! - - - # - - - O 			2  - - - - - - - - O - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! - - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - O - - - - - O ! ! 			1  - - - - - - - - - O 
+2  - ! - - - - - - - O 			2  - # - - - - - - O - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! - - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  - O - - - - - O ! ! 			1  - - - - - - - - - O 
+2  - ! - - - # - - - O 			2  - - - - - - - - O - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  - O - - - - - O ! ! 			1  - - - - - - - - - O 
+2  - ! - - - - - - - O 			2  - # - - - O - - O - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  - - - - - - - - - O 
+2  - ! - - - # - - - O 			2  - - - - - O - - O - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - - - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O - - - - - - - - O 
+2  - ! - - - - - - - O 			2  - # - - - O - - O - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - - - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O - - - - - - - - O 
+2  - ! - - - # - - - O 			2  - - - - - O - - O - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - - - - O ! ! 			1  O - - - - - - - - O 
+2  - ! - - - # - - - O 			2  - ! - - - O - - O - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! - - - - - - - O 			2  - ! - - - O - - O - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - - O 			2  - ! - - - O - - O - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - - - - - O 			2  O ! - - - O - - O - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - O O 			2  O ! - - - O - - O - 
+3  - ! O - - # - - - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - - - - 			3  - # - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - - - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - # - - - - 			4  - - - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - - - - - - 			4  - O - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O - - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O - - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  - - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 - - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 - - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - - - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - - - - - - - O O - 			9  - O - - - - - - - - 
+10 O - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - - - - - - - O O - 			9  - O - - - - - - - # 
+10 O - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - - - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - O - - - - - O O - 			9  - O - - - - - - - - 
+10 O - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - - O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - O - - - - - O O - 			9  - O - - - - - - - # 
+10 O - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - - O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  - - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - O - - - - - O O - 			9  - O - - - - - - - - 
+10 O - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - # 
+7  - - - - O O O - O - 			7  - - - O - ! O - - # 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - # 
+9  - O - - - - - O O - 			9  - O - - - - - - - # 
+10 O - - - - - - - - O 			10 O - # # # - - - - # 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  O - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - - 
+9  - O - - - - - O O - 			9  - O - - - - - - - - 
+10 O - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  O - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - - 
+10 O - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  O - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - - 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  O - - - O O O - O - 			7  - - - O - ! O - - - 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - - 
+7  O - - - O O O - O - 			7  - - - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - - - O O O - O - 			7  - - - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - - - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  - - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  - ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - - - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - - - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  - O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - - - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - - - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - - - - - - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - - - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - - - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - - - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - - - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - O - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - - - - 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - O - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - - - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O - - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - O - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - - - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - O - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - - ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - O - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - - - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - O - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - O - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - # - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - - - - - - - ! 
+10 O - - O - - O - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+Type done to yield your turn to player 2 : 
+1  O O - - O - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - - - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - - - - ! 
+10 O - - O - - O - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - O - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! - - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - - - - ! 
+10 O - - O - - O - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - O - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - - - - ! 
+10 O - - O - - O - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - O - - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - # # # - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - - # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - - - - - - - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - - - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - # # # - O - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 1 : 
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - O # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - - - - - O - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - O # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - - ! - - O - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - O # - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - # O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - - ! ! - O - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 1's turn to strike.
+Choose target coordinates : Miss.
+Type done to yield your turn to player 2 : 
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - O - - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - # ! ! O O - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - O ! - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - - O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - # ! ! O O - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+It is Player 2's turn to strike.
+Choose target coordinates : Hit!
+1  O O - - O O - O ! ! 			1  O O - - O - - O - O 
+2  - ! O - - ! O - O O 			2  O ! O - - O - - O - 
+3  - ! O - O ! - O - - 			3  - ! - O O ! ! ! ! O 
+4  O ! - O - ! O - O - 			4  O O - O - O O O O - 
+5  - ! O - O O - O - O 			5  - - O - O ! O - O - 
+6  - O - O ! ! ! O - - 			6  O - O - O ! O - - ! 
+7  O - O - O O O - O - 			7  - O - O - ! O O - ! 
+8  - - O O ! ! ! ! ! O 			8  O - O - O O - - O ! 
+9  - O - - O - - O O - 			9  - O - O - - O - - ! 
+10 O - - O - - O - - O 			10 O - # ! ! O O - - ! 
+   1 2 3 4 5 6 7 8 9 10 		   1 2 3 4 5 6 7 8 9 10 
+Player 1						Player 2
+
+Player 2 has won!
+Thanks for playing.

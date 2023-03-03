@@ -1,0 +1,38 @@
+carrier 1 1 h
+battleboat 0.7 3 c
+battleboat 0 3 c
+battleboat 1 3 c
+battleship 1 3 c
+battleship 1 3 v
+submarine 7 6 h
+cruiser 9 6 h
+cruiser 8 6 h
+cruiser 8 7 h
+destroyer 1 10 h
+y
+carrier 1 1 h
+battleship 1 2 h
+cruiser 5 2 h
+submarine 6 1 h
+destroyer 9 1 h
+y
+1 0.5
+one one
+1 1
+2 1
+3 1
+4 1
+5 1
+6 1
+7 1
+8 1
+9 1
+10 1
+12 1
+1 2
+2 2
+3 2
+4 2
+5 2
+6 2
+7 2

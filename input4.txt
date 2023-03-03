@@ -1,0 +1,39 @@
+carrier 1 1
+carrrier a 1 v
+carrier a 1 z
+carrier 20 1 99
+carrier 1 1 99
+carrrrier 1 1 z
+carrier 1 1 v
+carrier 1 9 v
+cruiser 2 1 v
+destroyer 3 1 v
+submarine 4 1 v
+battleship 5 1 v
+11111
+y
+destroyer 1 1 v
+cruiser 2 1 v
+carrier 3 1 v
+submarine 4 1 v
+battleship 5 1 v
+y
+a
+a a
+1 1
+1 2
+2 1
+2 2
+2 3
+3 1
+3 4
+3 2
+3 3
+3 5
+4 1
+4 2
+4 3
+5 1
+5 2
+5 3
+5 4
